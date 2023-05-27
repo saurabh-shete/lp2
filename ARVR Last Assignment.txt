@@ -1,0 +1,17 @@
+1. FIrst of all go login into vuforia engine and from there get go to License Manager and get your licence key
+2. Then go to target manager click on add database if there is database already then simply click on it here you can either add your new target or download database.
+3. While adding new target make sure that image is .jpg or .png and in the width field always give "1".
+4. After that go to downloads and download vuforia engine from there.
+5. Open project in unity
+6. Import your database and engine as assets.
+7. Then delete your main camera.
+8. From vuforia engine add AR camera and ImageReader. Click on the ImageReader and add one cube.
+9. Click on ImageTarget. In the inspector in Type field select from database and chose target.
+10. Click on ARCamera. In the inspector click on open vuforia engine config and then add paste your license key there
+11. Move your Image Target in front of your AR Camera.
+12. Go to file, build settings. If android is not downloaded then download.
+13. Then go to player settings deselect the"Auto Graphics API" then in the Graphics APIs remove vulkan and that's it.
+14. Set your "Minimum API level" to 26 level.
+15. Set your "Scripting Backend" to "IL2CPP".
+16. Then Select "ARM64" check box.
+17. Close the Player settings.and then build your app.
